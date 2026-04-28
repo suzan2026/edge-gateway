@@ -1,16 +1,8 @@
 {
-  "version": 2,
-  "name": "vercel.json",
-  "functions": {
-    "api/index.js": {
-      "maxDuration": 60
-    }
-  },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/api/index"
+      "src": "/(.*)",
+      "dest": "/api/index"
     }
-  ],
-  "trailingSlash": false
+  ]
 }
